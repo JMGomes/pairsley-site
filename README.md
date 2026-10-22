@@ -18,11 +18,24 @@ Open `http://localhost:8000/`.
 
 ## Deploy
 
-GitHub Pages serves the `main` branch from the repository root at https://jmgomes.github.io/pairsley-site/. `.nojekyll` stops Pages from running Jekyll over the files. All links are relative, so the pages also work under a custom domain.
+The site is live at https://pairsley.app/. GitHub Pages serves the `main` branch from the repository root. The `CNAME` file binds the custom domain, and the old address, jmgomes.github.io/pairsley-site, redirects there. `.nojekyll` stops Pages from running Jekyll over the files.
+
+## DNS at the registrar
+
+The domain is registered at GoDaddy. Pages needs these records:
+
+| Type | Name | Value |
+|---|---|---|
+| A | `@` | `185.199.108.153` |
+| A | `@` | `185.199.109.153` |
+| A | `@` | `185.199.110.153` |
+| A | `@` | `185.199.111.153` |
+| CNAME | `www` | `jmgomes.github.io` |
+
+Delete the parked A record and the parked `www` record that GoDaddy adds by default.
 
 ## To do before launch
 
 1. Add the support email address to the privacy page and the support page.
 2. Complete the privacy policy for the released version.
 3. Replace "Coming soon" with the App Store and Google Play links.
-4. Add a custom domain: a `CNAME` file, the DNS records at the registrar, and a `sitemap.xml` and `robots.txt` with the full URLs.
