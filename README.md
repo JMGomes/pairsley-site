@@ -36,6 +36,5 @@ Delete the parked A record and the parked `www` record that GoDaddy adds by defa
 
 ## To do before launch
 
-1. Add the support email address to the privacy page and the support page.
-2. Complete the privacy policy for the released version.
-3. Replace "Coming soon" with the App Store and Google Play links.
+1. Complete the privacy policy for the released version.
+2. Replace "Coming soon" with the App Store and Google Play links.
