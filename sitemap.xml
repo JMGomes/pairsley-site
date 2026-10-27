@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://pairsley.app/</loc>
-    <lastmod>2026-10-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-10-27</lastmod>
+    <image:image><image:loc>https://pairsley.app/assets/screens/board.webp</image:loc></image:image>
+    <image:image><image:loc>https://pairsley.app/assets/screens/map.webp</image:loc></image:image>
+    <image:image><image:loc>https://pairsley.app/assets/screens/own-deck.webp</image:loc></image:image>
+    <image:image><image:loc>https://pairsley.app/assets/screens/practice.webp</image:loc></image:image>
+    <image:image><image:loc>https://pairsley.app/assets/og.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://pairsley.app/support/</loc>
-    <lastmod>2026-10-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2026-10-27</lastmod>
   </url>
   <url>
     <loc>https://pairsley.app/privacy/</loc>
-    <lastmod>2026-10-22</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <lastmod>2026-10-27</lastmod>
   </url>
 </urlset>

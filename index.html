@@ -3,33 +3,160 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pairsley: Memory Match | A calm memory game</title>
-  <meta name="description" content="A calm memory match game for adults. Match flags, landmarks, masterpieces and your own photos. Plays offline, no account, one purchase for Pro and no subscription.">
+  <title>Pairsley: Memory Match | A Calm Memory Game for Adults</title>
+  <meta name="description" content="Pairsley is a calm memory matching game for adults. Match card pairs, flags, landmarks and famous paintings. Plays offline, no account, no subscription.">
   <meta name="author" content="João Gomes">
+  <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="theme-color" content="#EEF0F7">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/icon-32.png">
-  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
   <link rel="canonical" href="https://pairsley.app/">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/icon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/icon-192.png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Pairsley">
+  <meta property="og:locale" content="en_US">
   <meta property="og:url" content="https://pairsley.app/">
-  <meta property="og:title" content="Pairsley: Memory Match">
-  <meta property="og:description" content="A calm memory game. Match flags, landmarks, masterpieces and your own photos.">
+  <meta property="og:title" content="Pairsley: Memory Match | A calm memory game">
+  <meta property="og:description" content="Turn two cards, find the pair. Match flags, landmarks, famous paintings and your own photos, at your own pace.">
   <meta property="og:image" content="https://pairsley.app/assets/og.jpg">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="500">
+  <meta property="og:image:alt" content="Pairsley app icon and name next to matched cards: the UK flag with United Kingdom, Starry Night with Vincent van Gogh, and the Colosseum.">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pairsley: Memory Match | A calm memory game">
+  <meta name="twitter:description" content="Turn two cards, find the pair. Match flags, landmarks, famous paintings and your own photos.">
+  <meta name="twitter:image" content="https://pairsley.app/assets/og.jpg">
+  <meta name="twitter:image:alt" content="Pairsley app icon and name next to matched cards.">
   <link rel="preload" href="assets/fonts/Nunito-Black.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/screens/board.webp" as="image" type="image/webp">
   <link rel="stylesheet" href="assets/site.css">
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MobileApplication",
-    "name": "Pairsley: Memory Match",
-    "operatingSystem": "iOS, Android",
-    "applicationCategory": "GameApplication",
-    "description": "A calm memory match game for adults, with flags, landmarks, masterpieces and your own photos.",
-    "url": "https://pairsley.app/",
-    "author": { "@type": "Person", "name": "João Gomes" }
-  }
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://pairsley.app/#website",
+      "url": "https://pairsley.app/",
+      "name": "Pairsley",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://pairsley.app/#app",
+      "name": "Pairsley: Memory Match",
+      "alternateName": "Pairsley",
+      "description": "A calm memory matching game for adults. Match card pairs, flags, landmarks, famous paintings and your own photos. Plays offline, no account, no subscription.",
+      "url": "https://pairsley.app/",
+      "applicationCategory": "GameApplication",
+      "applicationSubCategory": "Puzzle game",
+      "genre": [
+        "Puzzle",
+        "Memory game",
+        "Card matching"
+      ],
+      "operatingSystem": "iOS, Android",
+      "inLanguage": "en",
+      "isAccessibleForFree": true,
+      "image": "https://pairsley.app/assets/icons/icon-512.png",
+      "screenshot": [
+        "https://pairsley.app/assets/screens/board.webp",
+        "https://pairsley.app/assets/screens/map.webp",
+        "https://pairsley.app/assets/screens/own-deck.webp",
+        "https://pairsley.app/assets/screens/practice.webp"
+      ],
+      "featureList": [
+        "Endless levels in chapters of twenty, with three hearts and up to three stars",
+        "Flags, Landmarks, Masterpieces, Math, Together, Shapes, Colors and Numbers decks",
+        "Your own decks from photos and words",
+        "Practice mode with no hearts, no stars and no ads",
+        "Plays offline, no account",
+        "Large text support and colour-blind patterns"
+      ],
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Pairsley",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        {
+          "@type": "Offer",
+          "name": "Pairsley Pro, one-time purchase",
+          "price": "4.99",
+          "priceCurrency": "USD"
+        }
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "João Gomes"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://pairsley.app/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of game is Pairsley?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pairsley is a memory matching game, also known as Concentration, Pairs or Memory. You turn over two cards at a time and look for the matching pair. It is made for adults who like a calm puzzle at their own pace."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Pairsley free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. You can play every level for free. Pro is an optional one-time purchase that removes the ads and opens every deck."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a subscription?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Pro is a single purchase. You pay once and keep it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it need the internet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. You can play offline. A connection is only needed for ads, for buying Pro and for restoring it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use my own photos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, with Pro, or for an hour after a short ad. Each pair can be a photo or a few words. Your photos stay on your phone and are never uploaded."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "I have a new phone. How do I get Pro back?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Open Settings in Pairsley and tap Restore purchases. Use the same Apple or Google account that bought Pro."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What data does Pairsley collect?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There is no account. If you agree, the free version shows ads that may use your phone's advertising ID. The privacy policy has the details."
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
 </head>
 <body>
@@ -185,6 +312,10 @@
 
   <section id="faq" class="faq">
     <h2>Questions</h2>
+    <details>
+      <summary>What kind of game is Pairsley?</summary>
+      <p>Pairsley is a memory matching game, also known as Concentration, Pairs or Memory. You turn over two cards at a time and look for the matching pair. It is made for adults who like a calm puzzle at their own pace.</p>
+    </details>
     <details>
       <summary>Is Pairsley free?</summary>
       <p>Yes. You can play every level for free. Pro is an optional one-time purchase that removes the ads and opens every deck.</p>
