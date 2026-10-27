@@ -1,6 +1,6 @@
 # pairsley-site
 
-The website of Pairsley: Memory Match. Three static pages, no build step.
+The website of Pairsley: Memory Match. Three static pages, no build step. Light theme only, like the app. The Nunito font is served from `assets/fonts` (OFL licence), so the pages load nothing from other sites.
 
 | Path | Purpose |
 |---|---|

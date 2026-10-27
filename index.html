@@ -3,99 +3,212 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pairsley: Memory Match — a calm memory game</title>
-  <meta name="description" content="Pairsley is a calm memory match game for grown-ups. Turn two cards and find the pair. Gentle levels, no timer pressure, works offline, no subscription.">
+  <title>Pairsley: Memory Match | A calm memory game</title>
+  <meta name="description" content="A calm memory match game for adults. Match flags, landmarks, masterpieces and your own photos. Plays offline, no account, one purchase for Pro and no subscription.">
   <meta name="author" content="João Gomes">
   <meta name="theme-color" content="#EEF0F7">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/icon-32.png">
   <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="canonical" href="https://pairsley.app/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Pairsley">
+  <meta property="og:url" content="https://pairsley.app/">
   <meta property="og:title" content="Pairsley: Memory Match">
-  <meta property="og:description" content="A calm memory match game for grown-ups. Offline. No subscription.">
-  <meta property="og:image" content="assets/icons/icon-512.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <meta property="og:description" content="A calm memory game. Match flags, landmarks, masterpieces and your own photos.">
+  <meta property="og:image" content="https://pairsley.app/assets/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="assets/fonts/Nunito-Black.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="assets/site.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Pairsley: Memory Match",
+    "operatingSystem": "iOS, Android",
+    "applicationCategory": "GameApplication",
+    "description": "A calm memory match game for adults, with flags, landmarks, masterpieces and your own photos.",
+    "url": "https://pairsley.app/",
+    "author": { "@type": "Person", "name": "João Gomes" }
+  }
+  </script>
 </head>
 <body>
 <main>
   <header class="brand">
     <a class="wordmark" href="./"><img src="assets/icons/icon-48.png" width="32" height="32" alt="">Pairsley</a>
-    <nav>
+    <nav aria-label="Main">
+      <a class="wide" href="#decks">Decks</a>
+      <a href="#pro">Pro</a>
+      <a class="wide" href="#faq">FAQ</a>
       <a href="support/">Support</a>
-      <a href="privacy/">Privacy</a>
     </nav>
   </header>
 
   <div class="hero">
     <div>
       <h1>A calm memory game<span class="leaf">.</span></h1>
-      <p class="lead">Turn two cards and find the pair. Pairsley is a relaxing memory match game for grown-ups, with gentle levels, no timer pressure, and no internet needed.</p>
-      <span class="soon"><span class="dot"></span>Coming soon to iPhone and Android</span>
+      <p class="lead">Turn two cards, find the pair. Flags, landmarks, art and your own photos, at your own pace.</p>
+      <div class="actions">
+        <span class="soon">Coming soon to iPhone and Android</span>
+        <a href="#decks">See the decks</a>
+      </div>
     </div>
-    <div class="hero-shots" aria-hidden="true">
-      <div class="phone"><img src="assets/screens/map.png" alt="" width="599" height="1304"></div>
-      <div class="phone"><img src="assets/screens/math.png" alt="" width="599" height="1304"></div>
+    <div class="hero-art">
+      <div class="phone"><img src="assets/screens/board.webp" width="660" height="1434" alt="A Pairsley board in play: some pairs of shapes are found, the rest of the cards are face down." fetchpriority="high"></div>
+      <div class="pair" aria-hidden="true"><img src="assets/cards/flag-uk.webp" width="240" height="298" alt=""><span class="eq">=</span><img src="assets/cards/name-uk.webp" width="240" height="298" alt=""></div>
     </div>
   </div>
 
+  <section id="decks">
+    <h2>Flags, landmarks, masterpieces</h2>
+    <p class="section-lead">Math calculations and much more. Many decks match by meaning: a flag finds its country, a painting finds its painter.</p>
+    <div class="decks">
+      <div class="deck deck-flags">
+        <div>
+          <h3>Flags <span class="tag">PRO</span></h3>
+          <p>92 countries. Each flag finds its name, and in sets of three, its capital too.</p>
+        </div>
+        <div class="pair"><img src="assets/cards/flag-uk.webp" width="240" height="298" alt="The flag of the United Kingdom"><span class="eq" aria-label="matches">=</span><img src="assets/cards/name-uk.webp" width="240" height="298" alt="The words United Kingdom"></div>
+      </div>
+      <div class="deck deck-landmarks">
+        <div class="pair"><img src="assets/cards/colosseum.webp" width="240" height="298" alt="The Colosseum"><span class="eq" aria-label="matches">=</span><img src="assets/cards/flag-italy.webp" width="240" height="298" alt="The flag of Italy"></div>
+        <div>
+          <h3>Landmarks <span class="tag">PRO</span></h3>
+          <p>30 landmarks drawn for Pairsley, each with its country's flag.</p>
+        </div>
+      </div>
+      <div class="deck deck-art">
+        <div class="pair"><img src="assets/cards/starry.webp" width="240" height="298" alt="The Starry Night"><span class="eq" aria-label="matches">=</span><img src="assets/cards/vangogh.webp" width="240" height="298" alt="The words Vincent van Gogh"></div>
+        <div>
+          <h3>Masterpieces <span class="tag">PRO</span></h3>
+          <p>30 famous paintings and the painters who made them.</p>
+        </div>
+      </div>
+      <div class="deck deck-math">
+        <div class="pair"><img src="assets/cards/sum75.webp" width="240" height="240" alt="The sum 7 plus 5"><span class="eq" aria-label="matches">=</span><img src="assets/cards/n12.webp" width="240" height="240" alt="The number 12"></div>
+        <div>
+          <h3>Math <span class="tag">PRO</span></h3>
+          <p>A sum finds its answer.</p>
+        </div>
+      </div>
+      <div class="deck deck-more">
+        <div>
+          <h3>And more</h3>
+          <p>Together <span class="tag">PRO</span> pairs things that belong together, like a key and a lock. Three classic decks are free:</p>
+        </div>
+        <ul aria-label="Free decks">
+          <li>Shapes</li>
+          <li>Colors</li>
+          <li>Numbers</li>
+        </ul>
+      </div>
+    </div>
+    <p class="deck-note">Try any Pro deck for 24 hours after a short ad.</p>
+  </section>
+
   <section>
-    <h2>Easy to start. Hard to put down.</h2>
-    <p class="section-lead">Every level is a fresh board. Clear it with hearts to spare and earn up to three stars.</p>
-    <div class="features">
-      <div class="feature">
-        <div class="chip heart">♥</div>
-        <h3>Three hearts, three stars</h3>
-        <p>A miss only costs a heart when you have already seen that card. The hearts you keep become your stars.</p>
-      </div>
-      <div class="feature">
-        <div class="chip lilac">=</div>
-        <h3>Match by meaning</h3>
-        <p>Some decks pair cards by meaning, not by look: 4 + 4 finds its partner in 8.</p>
-      </div>
-      <div class="feature">
-        <div class="chip match">↻</div>
-        <h3>A new twist each chapter</h3>
-        <p>Cards that swap, fall, turn or lock. Each twist arrives with a short demo and a gentle first level.</p>
-      </div>
-      <div class="feature">
-        <div class="chip peach">☼</div>
-        <h3>Practice your way</h3>
-        <p>Pick a deck, a board size and a twist. No hearts, no stars, no ads. Just play.</p>
-      </div>
-      <div class="feature">
-        <div class="chip lilac">✈</div>
-        <h3>Offline, no account</h3>
-        <p>No sign-up and no internet needed. Your progress stays on your phone.</p>
-      </div>
-      <div class="feature">
-        <div class="chip match">Aa</div>
-        <h3>Easy on the eyes</h3>
-        <p>Large text support, calm colours, patterns on colour cards, and a reduced-motion mode.</p>
+    <div class="split">
+      <div class="art"><div class="phone"><img src="assets/screens/map.webp" width="660" height="1434" alt="The level map: a parsley stem climbs past cleared levels with their stars to the next level." loading="lazy"></div></div>
+      <div class="copy-col">
+        <h2>Watch your path grow</h2>
+        <p>Endless gentle levels in chapters of twenty. Every level gives you three hearts, and the hearts you keep become stars.</p>
+        <p>A miss only costs a heart when you had already seen the partner card. Each chapter adds one new twist, with a short demo and an easy first level.</p>
       </div>
     </div>
   </section>
 
   <section>
-    <h2>Have a look</h2>
-    <div class="shots">
-      <figure><div class="phone"><img src="assets/screens/board.png" alt="A board of face-down cards with one matched pair" width="599" height="1304" loading="lazy"></div><figcaption>A clean, calm board</figcaption></figure>
-      <figure><div class="phone"><img src="assets/screens/map.png" alt="The level map with stars on cleared levels" width="599" height="1304" loading="lazy"></div><figcaption>Earn three stars</figcaption></figure>
-      <figure><div class="phone"><img src="assets/screens/math.png" alt="A Math board where 7 + 7 matches 14" width="599" height="1304" loading="lazy"></div><figcaption>Match by meaning</figcaption></figure>
-      <figure><div class="phone"><img src="assets/screens/practice.png" alt="The practice setup with deck, board size and twist" width="599" height="1304" loading="lazy"></div><figcaption>Practice your way</figcaption></figure>
+    <div class="split flip">
+      <div class="copy-col">
+        <h2>A deck as unique as you</h2>
+        <p>Photos or words, family or places: you choose every card. Make a deck of the grandchildren, your garden or the words you are learning.</p>
+        <p>Your photos stay on your phone. Nothing is uploaded.</p>
+        <span class="note">Part of Pro. Or try it for an hour after a short ad.</span>
+      </div>
+      <div class="art">
+        <div class="phone"><img src="assets/screens/own-deck.webp" width="660" height="1434" alt="A board of an own deck called Our family, with photos of family members matched to their names." loading="lazy"></div>
+        <img class="editor-card" src="assets/cards/own-deck-pair.webp" width="760" height="352" alt="The deck editor: a photo of Grandma Rosa paired with her name." loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <div class="band">
+    <h2>No hearts. No stars. No ads.</h2>
+    <p>Practice your way. Pick a deck, a board size and a twist, and just play. Add a short peek at the start if you like.</p>
+    <div class="band-wrap"><div class="phone"><img src="assets/screens/practice.webp" width="660" height="1434" alt="The practice setup: choose a deck, a board size and a twist." loading="lazy"></div></div>
+  </div>
+
+  <section id="pro">
+    <h2>One purchase. Yours for good.</h2>
+    <p class="section-lead">Pairsley is free to play. Pro is a single purchase, not a subscription.</p>
+    <div class="plans">
+      <div class="plan">
+        <h3>Free</h3>
+        <p class="price">$0</p>
+        <p class="fine">With a few short ads.</p>
+        <ul>
+          <li>Every level of the saga</li>
+          <li>Practice, one twist at a time</li>
+          <li>Shapes, Colors and Numbers</li>
+          <li>Pro decks for 24 hours after a short ad</li>
+          <li>Your own decks for 1 hour after a short ad</li>
+          <li>From level 20, a short ad after some cleared levels: at most one every 3 minutes, never after a lost level</li>
+        </ul>
+      </div>
+      <div class="plan plan-pro">
+        <h3>Pro</h3>
+        <p class="price">$4.99 <small>once</small></p>
+        <p class="fine">The price in your store may differ by country.</p>
+        <ul>
+          <li>No ads, ever</li>
+          <li>Every deck, including future decks</li>
+          <li>Your own decks from photos and words</li>
+          <li>An extra heart without an ad</li>
+          <li>Stack twists in practice</li>
+          <li>Restore it on a new phone with the same Apple or Google account</li>
+        </ul>
+      </div>
     </div>
   </section>
 
   <section>
-    <div class="pro">
-      <div>
-        <h2>Free to play. One purchase for Pro.</h2>
-        <p>Pairsley is free with a short ad between some levels. Pairsley Pro removes every ad and unlocks every deck. You pay once and keep it. There is no subscription.</p>
-      </div>
-      <div class="price">$4.99<small>once</small></div>
+    <h2>Made to be easy on you</h2>
+    <div class="facts">
+      <div class="fact"><h3>Plays offline</h3><p>No internet needed to play. You only need it for ads and for buying Pro.</p></div>
+      <div class="fact"><h3>No account</h3><p>No sign-up and no email. Your progress stays on your phone.</p></div>
+      <div class="fact"><h3>Large, clear cards</h3><p>Text follows your phone's text size, and a Large card setting makes boards easier to see.</p></div>
+      <div class="fact"><h3>Colour-blind friendly</h3><p>Every colour card also carries a pattern, so colour is never the only clue.</p></div>
+      <div class="fact"><h3>Calm motion</h3><p>Turn off bouncy animations, or let Pairsley follow your phone's reduce-motion setting.</p></div>
+      <div class="fact"><h3>Quiet when you want</h3><p>Soft sounds, and the Sound switch mutes the ads too.</p></div>
     </div>
+  </section>
+
+  <section id="faq" class="faq">
+    <h2>Questions</h2>
+    <details>
+      <summary>Is Pairsley free?</summary>
+      <p>Yes. You can play every level for free. Pro is an optional one-time purchase that removes the ads and opens every deck.</p>
+    </details>
+    <details>
+      <summary>Is there a subscription?</summary>
+      <p>No. Pro is a single purchase. You pay once and keep it.</p>
+    </details>
+    <details>
+      <summary>Does it need the internet?</summary>
+      <p>No. You can play offline. A connection is only needed for ads, for buying Pro and for restoring it.</p>
+    </details>
+    <details>
+      <summary>Can I use my own photos?</summary>
+      <p>Yes, with Pro, or for an hour after a short ad. Each pair can be a photo or a few words. Your photos stay on your phone and are never uploaded.</p>
+    </details>
+    <details>
+      <summary>I have a new phone. How do I get Pro back?</summary>
+      <p>Open Settings in Pairsley and tap Restore purchases. Use the same Apple or Google account that bought Pro.</p>
+    </details>
+    <details>
+      <summary>What data does Pairsley collect?</summary>
+      <p>There is no account. If you agree, the free version shows ads that may use your phone's advertising ID. The <a href="privacy/">privacy policy</a> has the details.</p>
+    </details>
   </section>
 
   <footer>
