@@ -37,4 +37,21 @@ Delete the parked A record and the parked `www` record that GoDaddy adds by defa
 ## To do before launch
 
 1. Complete the privacy policy for the released version.
-2. Replace "Coming soon" with the App Store and Google Play links.
+2. Replace "Coming soon" with the official App Store and Google Play badges and links.
+
+## Search engines (follow-up)
+
+Do these steps once. They tell Google and Bing about the site.
+
+1. Open [Google Search Console](https://search.google.com/search-console).
+2. Add `pairsley.app` as a **Domain** property.
+3. Copy the TXT record that Google shows.
+4. In GoDaddy DNS, add the TXT record for the name `@`. Then click **Verify** in Search Console. DNS changes can take up to an hour.
+5. In Search Console, open **Sitemaps** and submit `https://pairsley.app/sitemap.xml`.
+6. Open [Bing Webmaster Tools](https://www.bing.com/webmasters) and choose **Import from Google Search Console**. Bing also supplies DuckDuckGo and Yahoo.
+
+## When the apps are live
+
+1. Add the App Store and Google Play links to `sameAs` in the structured data of `index.html`.
+2. Add the Smart App Banner: `<meta name="apple-itunes-app" content="app-id=APP_STORE_ID">`.
+3. Update `lastmod` in `sitemap.xml` after each content change.
