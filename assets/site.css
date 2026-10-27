@@ -98,11 +98,13 @@ h2 { font-size: clamp(32px, 4vw, 44px); font-weight: 900; letter-spacing: -0.8px
 .deck .info { padding: 0 14px; }
 .deck h3 { margin: 0; font-size: 22px; font-weight: 900; }
 .deck p { margin: 4px 0 0; color: var(--ink-soft); font-size: 17px; }
-.deck .pair { box-shadow: 0 4px 0 rgba(var(--shadow), 0.10); }
-.deck .pair img { width: 84px; }
+/* In a tile the pair shrinks with the tile, so it never spills out. */
+.deck .pair { display: flex; width: 100%; max-width: 250px; box-shadow: 0 4px 0 rgba(var(--shadow), 0.10); }
+.deck .pair img { flex: 1 1 0; min-width: 0; width: auto; }
+.deck .pair .eq { flex: none; }
 .deck-flags { grid-row: span 2; }
 .deck-flags .stage { flex: 1; }
-.deck-flags .pair img { width: 132px; }
+.deck-flags .pair { max-width: 340px; }
 .deck-flags .stage { background: var(--tint-flags); }
 .deck-landmarks .stage { background: var(--tint-landmarks); }
 .deck-art .stage { background: var(--tint-art); }
@@ -176,7 +178,6 @@ footer .copy { margin-left: auto; }
   .hero-art .pair { left: -40px; bottom: 80px; }
   .decks { grid-template-columns: 1fr 1fr; }
   .deck-flags { grid-row: auto; grid-column: span 2; }
-  .deck-more { grid-column: span 2; }
   .plans, .facts { grid-template-columns: 1fr; }
   .facts { gap: 0; }
   .art .editor-card { left: -40px; width: 250px; }
