@@ -79,7 +79,11 @@ main { overflow-wrap: break-word; max-width: 1120px; margin: 0 auto; padding: 0 
 .hero h1 .leaf { color: var(--leaf); }
 .lead { font-size: 22px; color: var(--ink-soft); margin: 0 0 30px; max-width: 32ch; }
 .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 24px; }
-.soon { display: inline-flex; align-items: center; background: var(--surface); color: var(--ink); border-radius: 999px; padding: 14px 24px; font-weight: 900; box-shadow: 0 4px 0 var(--edge); }
+/* Apple's badge stays unchanged. Keep a clear space of a quarter of its
+   height around it. */
+.store-badge { display: inline-block; line-height: 0; border-radius: 9px; }
+.store-badge img { display: block; width: auto; height: 54px; }
+.platforms { margin: 16px 0 0; color: var(--ink-soft); font-size: 17px; }
 .hero-art { position: relative; max-width: 360px; margin: 0 auto; width: 100%; }
 .hero-art .phone { transform: rotate(3deg); }
 .hero-art .pair { position: absolute; left: -96px; bottom: 120px; transform: rotate(-4deg); }
@@ -129,6 +133,10 @@ h2 { font-size: clamp(32px, 4vw, 44px); font-weight: 900; letter-spacing: -0.8px
 .band p { color: var(--ink-soft); font-size: 21px; max-width: 44ch; margin: 0 auto 40px; }
 .band .phone { max-width: 320px; margin: 0 auto -260px; box-shadow: 0 6px 0 var(--edge); background: var(--canvas); }
 .band-wrap { height: 420px; overflow: hidden; }
+
+/* Closing call to download */
+.get { margin-top: 72px; background: var(--surface); border-radius: 32px; padding: 56px 24px; text-align: center; box-shadow: 0 6px 0 var(--edge); }
+.get p { color: var(--ink-soft); font-size: 21px; max-width: 44ch; margin: 0 auto 28px; }
 
 /* Pricing */
 .plans { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: stretch; }
@@ -188,7 +196,7 @@ footer .copy { margin-left: auto; }
   main { padding: 0 16px 48px; }
   .brand nav { gap: 14px; }
   .brand nav .wide { display: none; }
-  .lead, .section-lead, .band p { font-size: 19px; }
+  .lead, .section-lead, .band p, .get p { font-size: 19px; }
   .hero-art { max-width: 240px; }
   .hero-art .pair { left: -24px; bottom: 60px; }
   .pair img { width: 72px; }
@@ -196,6 +204,7 @@ footer .copy { margin-left: auto; }
   .deck-flags { grid-column: auto; }
   .art .editor-card { left: -16px; width: 210px; }
   .band { padding-top: 44px; }
+  .get { padding: 44px 20px; }
   .band-wrap { height: 340px; }
   footer .copy { margin-left: 0; width: 100%; }
 }

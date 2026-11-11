@@ -34,10 +34,9 @@ The domain is registered at GoDaddy. Pages needs these records:
 
 Delete the parked A record and the parked `www` record that GoDaddy adds by default.
 
-## To do before launch
+## App store links
 
-1. Complete the privacy policy for the released version.
-2. Replace "Coming soon" with the official App Store and Google Play badges and links.
+The iPhone app is live on the App Store (app ID `6825919047`). The landing page shows Apple's official badge from `assets/badges/app-store.svg`. The badge links to the App Store. Safari on iPhone also shows the Smart App Banner.
 
 ## Search engines (follow-up)
 
@@ -50,8 +49,10 @@ Do these steps once. They tell Google and Bing about the site.
 5. In Search Console, open **Sitemaps** and submit `https://pairsley.app/sitemap.xml`.
 6. Open [Bing Webmaster Tools](https://www.bing.com/webmasters) and choose **Import from Google Search Console**. Bing also supplies DuckDuckGo and Yahoo.
 
-## When the apps are live
+## When the Android app is live
 
-1. Add the App Store and Google Play links to `sameAs` in the structured data of `index.html`.
-2. Add the Smart App Banner: `<meta name="apple-itunes-app" content="app-id=APP_STORE_ID">`.
-3. Update `lastmod` in `sitemap.xml` after each content change.
+1. Get the official "Get it on Google Play" badge from Google's badge page and save it in `assets/badges/`.
+2. Add the badge next to the App Store badge in the hero and in the closing panel of `index.html`.
+3. Replace "Free on iPhone. Android is coming soon." with a sentence about both phones.
+4. Add the Google Play link to `sameAs` and set `operatingSystem` to `iOS, Android` in the structured data of `index.html`.
+5. Update `lastmod` in `sitemap.xml`. Do this after each content change.
